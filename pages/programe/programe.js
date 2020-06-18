@@ -33,10 +33,14 @@ Component({
         modalName: null
       })
     },
-    showQrcode() {
-      wx.previewImage({
-        urls: ['../../images/tabbar/ercode.png'],
-        current: '../../images/tabbar/ercode.png' // 当前显示图片的http链接      
+    showModal(e) {
+      this.setData({
+        modalName: e.currentTarget.dataset.target
+      })
+    },
+    hideModal(e) {
+      this.setData({
+        modalName: null
       })
     },
   }
