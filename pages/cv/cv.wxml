@@ -1,0 +1,48 @@
+<!--pages/cv/cv.wxml-->
+<!-- 头像,个人信息 -->
+<scroll-view scroll-y class="scrollPage">
+	<view class="bg-white padding-top-bottom-20">
+		<view class="cv_name">王栋</view>
+		<view class="summary_box">
+			<view class="action" wx:for="{{personInfoSum}}">
+				{{item}}
+			</view>
+		</view>
+	</view>
+
+	<!-- 教育背景 -->
+	<view class="card">
+		<cv-card _needBasicInfo _title='教育背景' _basicInfo='{{education}}' _contentInfo='{{education_content}}'>
+			<text class="cuIcon-form lg"></text>
+		</cv-card>
+	</view>
+
+	<!-- 工作经验 -->
+	<view class="card">
+		<cv-card _needBasicInfo _title='工作经历' _basicInfo='{{workExperience}}' _contentInfo='{{workContent}}'>
+			<text class="cuIcon-send lg"></text>
+		</cv-card>
+		<cv-card _needTitle='{{false}}' _basicInfo='{{workExperience2}}' _contentInfo='{{workContent2}}'></cv-card>
+	</view>
+	<!-- 项目经验 -->
+	<view class="card">
+		<cv-card2 _needTitle _title='项目经验' _basicInfo='{{programeExperience}}' _actionTitle='{{programeContent.techStack}}' _actionContent='{{programeContent.desc}}' _actionTitle2='{{programeContent.major}}' _actionContent2='{{programeContent.majorItem}}'>
+			<text class="cuIcon-cascades lg"></text>
+		</cv-card2>
+		<cv-card2 _needTitle="{{false}}" _basicInfo='{{programeExperience2}}' _actionTitle='{{programeContent2.techStack}}' _actionContent='{{programeContent2.desc}}' _actionTitle2='{{programeContent2.major}}' _actionContent2='{{programeContent2.majorItem}}'>
+		</cv-card2>
+	</view>
+	<!-- 专业技能 -->
+	<view class="card">
+		<cv-card _title='专业技能' _needBasicInfo="{{false}}" _contentInfo="{{skillContent}}">
+			<text class="cuIcon-settings lg"></text>
+		</cv-card>
+	</view>
+	<!-- 自我评价 -->
+	<view class="card">
+		<cv-card _title='自我评价' _needBasicInfo="{{false}}" _contentInfo="{{selfContent}}">
+			<text class="cuIcon-evaluate lg "></text>
+		</cv-card>
+	</view>
+	<view class='cu-tabbar-height'></view>
+</scroll-view>

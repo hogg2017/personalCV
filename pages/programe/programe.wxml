@@ -1,0 +1,19 @@
+<!--pages/programe/programe.wxml-->
+<view>
+
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/hogg2017/personalCV">
+        <text class="cuIcon-github text-grey"></text>
+        <text class="text-grey">GitHub</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-appreciatefill text-grey"></text>
+        <text class="text-grey">简历二维码</text>
+      </view>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>
+</view>

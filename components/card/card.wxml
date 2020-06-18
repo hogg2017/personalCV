@@ -1,0 +1,13 @@
+<!--components/card/card.wxml-->
+<!-- 教育背景 -->
+<view class="card">
+	<view class="title bg-white border" wx:if="{{_needTitle}}">
+	<slot></slot>
+	{{_title}}</view>
+	<view class="basic_info text-green margin-top-20 "  wx:if="{{_needBasicInfo}}">
+		<view class="action" wx:for="{{_basicInfo}}">{{item}}</view>
+	</view>
+  <view class="content_info border margin-top-20">
+  <view class="action" wx:for="{{_contentInfo}}">{{index+1}}.{{item}}</view>
+  </view>
+</view>

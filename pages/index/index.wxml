@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- 导航栏 -->
+<cu-custom bg-color="bg-gradual-green">
+<view slot="backText">返回</view>
+<view slot="content">{{currentPage == 'cv'?'个人简历':'Github'}}</view>
+</cu-custom>
+<view>
+<cv wx:if="{{currentPage == 'cv'? true:false}}"></cv>
+<programe wx:if="{{currentPage == 'programe'? true:false}}"></programe>
+</view>
+<!-- 底部 -->
+  <view class="cu-bar tabbar bg-white foot">
+    <view class="action" bindtap="NavChange" data-cur="cv">
+      <view class="cuIcon-cu-image">
+        <image src="/images/tabbar/about{{currentPage == 'cv'?  '_cur':''}}.png"></image>
+      </view>
+      <view class="{{currentPage == 'cv'? 'text-green':'text-gray'}}">个人简历</view>
+    </view>
+    <view class="action" bindtap="NavChange" data-cur="programe">
+      <view class="cuIcon-cu-image">
+        <!-- <image src="/images/tabbar/component{{currentPage == 'programe'?  '_cur':''}}.png"></image> -->
+        <text class="cuIcon-github lg {{currentPage == 'programe'?  'text-green':'text-grey'}}"></text>
+      </view>
+      <view class="{{currentPage == 'programe'? 'text-green':'text-gray'}}">Github</view>
+    </view>
+  </view>
+
+

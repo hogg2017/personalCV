@@ -1,0 +1,17 @@
+<!--components/card2/card.wxml-->
+<view class="card">
+	<view class="title bg-white border" wx:if="{{_needTitle}}">
+  <slot></slot>
+  {{_title}}</view>
+	<view class="basic_info text-green margin-top-20 " wx:if="{{_needBasicInfo}}">
+		<view class="action" wx:for="{{_basicInfo}}">{{item}}</view>
+	</view>
+	<view class="content_info border">
+		<view class="action_title text-center  text-grey margin-tb-20">技术栈:{{_actionTitle}}</view>
+  <view class="action  line-height-45" >{{_actionContent}}</view>
+  </view>
+  	<view class="content_info border">
+		<view class="action_title text-center  text-grey margin-tb-20">{{_actionTitle2}}</view>
+  <view class="action line-height-45 "  wx:for="{{_actionContent2}}">{{index+1}}.{{item}}</view>
+  </view>
+</view>

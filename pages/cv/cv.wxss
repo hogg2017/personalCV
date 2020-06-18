@@ -1,0 +1,41 @@
+/* pages/cv/cv.wxss */
+.cv_name{
+  width: 100%;
+  line-height: 100rpx;
+  font-size: 45rpx;
+  font-weight: bold;
+  padding: 20px 0 20px 20px;
+}
+.summary_box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px 0 20px;
+}
+.summary_box .action{
+  border-right: 1px;
+  border-right-style: solid;
+  padding-right: 10px;
+}
+.summary_box .action:last-child{
+  border-right-style: hidden;
+}
+.bg-white{
+  background-color: white;
+}
+.padding-top-bottom-20{
+  padding: 20px 0 20px 0;
+}
+
+.card{
+  background-color: white;
+  margin-top: 15rpx;
+}
+.scrollPage{
+  height: 100vh;
+}
+.cu-tabbar-height {
+  min-height: 100rpx;
+  height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+}
+

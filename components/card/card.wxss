@@ -1,0 +1,39 @@
+/* components/card/card.wxss */
+/* 组件 */
+@import "../../colorui//main.wxss";
+.card{font-size: 30rpx;margin-top: 20rpx;}
+.basic_info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  flex-wrap: nowrap;
+  line-height: 25px;
+}
+.basic_info .action{
+  line-height: 25px;
+}
+.content_info{
+  display: flex;
+  justify-content:flex-start;
+  padding: 0 20px 0 20px;
+  flex-wrap: wrap;
+}
+.content_info .action{
+  line-height: 50rpx;
+}
+.title{
+  width: 100%;
+  font-family: 25px;
+  line-height: 25px;
+  font-weight: bold;
+  padding: 15px 0 15px 20px;
+}
+.border{
+  border-bottom: 1px solid rgba(128, 128, 128, 0.425)
+}
+.margin-top-20{
+  margin-top: 20rpx;
+}
+.line-height-45{
+  line-height: 45rpx;
+}

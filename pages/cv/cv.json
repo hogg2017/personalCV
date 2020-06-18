@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "cv-card": "../../components/card/card",
+    "cv-card2": "../../components/card2/card"
+  }
+}
