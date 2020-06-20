@@ -1,6 +1,6 @@
 <!--pages/cv/cv.wxml-->
 <!-- 头像,个人信息 -->
-<scroll-view scroll-y class="scrollPage">
+<!-- <scroll-view scroll-y class="scrollPage"> -->
 	<view class="bg-white padding-top-bottom-20">
 		<view class="cv_name">王栋</view>
 		<view class="summary_box">
@@ -45,4 +45,4 @@
 		</cv-card>
 	</view>
 	<view class='cu-tabbar-height'></view>
-</scroll-view>
+<!-- </scroll-view> -->

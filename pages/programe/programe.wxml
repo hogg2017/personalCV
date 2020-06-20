@@ -17,7 +17,8 @@
     <!-- 图片 -->
     <view class="cu-modal {{modalName=='Image'?'show':''}}">
   <view class="cu-dialog">
-    <view class="bg-img" style="background-image: url('../../images/tabbar/ercode.png');height:260px;">
+    <view class="bg-img" style="height:260px;">
+    <image src="../../images/tabbar/ercode.png"></image>
       <view class="cu-bar justify-end text-white">
         <view class="action" bindtap="hideModal">
           <text class="cuIcon-close text-green"></text>
